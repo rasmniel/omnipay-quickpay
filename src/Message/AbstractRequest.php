@@ -335,4 +335,21 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         return $this->setParameter('order_id', $value);
     }
+	
+    /**
+     * @return string
+     */
+    public function getDeadline()
+    {
+        return $this->getParameter('deadline');
+    }
+
+    /**
+     * @param $value
+     * @return mixed
+     */
+    public function setDeadline($value)
+    {
+        return $this->setParameter('deadline', $value);
+    }
 }
